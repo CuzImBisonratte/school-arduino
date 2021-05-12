@@ -1,5 +1,6 @@
 # Schul-Reaktionstester
 Dies ist das Repo zu einem Schulprojekt, bei dem wir ideen zu einem Reaktionstestgerät bringen sollten.
+Zum Herunterladen hier gucken: https://github.com/CuzImBisonratte/Schule-Reaktionstester/releases
 
 
 ## Code
