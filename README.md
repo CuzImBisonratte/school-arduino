@@ -22,3 +22,7 @@ Steckplatine klein|1x
 
 ## Aufbau
 ![Aufbau in der Aufbau.png](https://github.com/CuzImBisonratte/Schule-Reaktionstester/blob/main/AufbauAusgeschnitten.png)
+
+
+# Archiviert!
+Dieses Repository ist ab jetzt archiviert, da das projekt beendet ist.
