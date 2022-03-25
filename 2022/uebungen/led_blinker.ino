@@ -1,16 +1,24 @@
 // This program blinks a led
 
+// Variables
 int led_pin = 3;
 
+// Setup
 void setup()
 {
-  pinMode(led_pin, OUTPUT);
+    // Set the led as an output
+    pinMode(led_pin, OUTPUT);
 }
 
+// Loop
 void loop()
 {
-  digitalWrite(led_pin, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(led_pin, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
+    // Turn on the led
+    digitalWrite(led_pin, HIGH);
+    // Wait for 1 second
+    delay(1000);
+    // Turn off the led
+    digitalWrite(led_pin, LOW);
+    // Wait for 1 second
+    delay(1000);
 }
