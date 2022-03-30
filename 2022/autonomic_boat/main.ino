@@ -3,6 +3,8 @@
 //
 #include <Servo.h> 
 
+// Create a Servo Object
+Servo servo_ruder;
 
 // Setup
 void setup(){
@@ -15,8 +17,6 @@ void setup(){
     //
     // Main
     //
-    // Create a Servo Object
-    Servo servo_ruder;
 
     // Set control pin
     myServo.attach(ruder_servo);
