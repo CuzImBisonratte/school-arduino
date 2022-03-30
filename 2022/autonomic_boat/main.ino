@@ -3,18 +3,21 @@
 //
 #include <Servo.h> 
 
-//
-// Variables 
-//
 
-int ruder_servo = 9;
+// Setup
+void setup(){
 
-//
-// Main
-//
+    //
+    // Variables 
+    //
+    int ruder_servo = 9;
 
-// Create a Servo Object
-Servo servo_ruder;
+    //
+    // Main
+    //
+    // Create a Servo Object
+    Servo servo_ruder;
 
-// Set control pin
-myServo.attach(ruder_servo);
+    // Set control pin
+    myServo.attach(ruder_servo);
+}
