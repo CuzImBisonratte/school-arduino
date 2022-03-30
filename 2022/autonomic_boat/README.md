@@ -7,4 +7,5 @@ The motor is already on the boat and controlled otherwise.
 
 ## Steering
 This code is only used for steering the boat.  
-The boat has a rudder on it.
+The boat has a rudder on it.  
+The rudder is controlled by a servomotor.
