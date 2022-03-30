@@ -12,8 +12,6 @@ void setup()
     pinMode(led_pin, OUTPUT);
     // Button as input
     pinMode(button_pin, INPUT_PULLUP);
-    // Start the Serial connection
-    Serial.begin(9600);
 }
 
 // Loop
