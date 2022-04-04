@@ -13,13 +13,13 @@ int trigger_left = 9;
 int echo_left = 8;
 long echo_time_left = 0;
 int turn_left = 0;
-float sensor_l_distance = 0;
+int sensor_l_distance = 0;
 
 int trigger_right = 7;
 int echo_right = 6;
 long echo_time_right = 0;
 int turn_right = 0;
-float sensor_r_distance = 0;
+int sensor_r_distance = 0;
 
 // Setup
 void setup(){
@@ -43,6 +43,9 @@ void setup(){
 
     // Set control pin
     servo_ruder.attach(ruder_servo);
+
+    // Serial Debugging
+    Serial.begin(9600);
 }
 
 // Loop
@@ -78,4 +81,20 @@ void loop(){
         turn_right = 0.225 * (180 - sensor_r_distance);
     }
 
+    // Debug report
+    Serial.println("Debug report:");
+    Serial.println("");
+    Serial.println("Left");
+    Serial.println("====");
+    Serial.println("Echo Time: " + echo_time_left);
+    Serial.println("Echo Distance: " + sensor_l_distance);
+    Serial.println("Turn: " + turn_left);
+    Serial.println("");
+    Serial.println("Right");
+    Serial.println("=====");
+    Serial.println("Echo Time: " + echo_time_right);
+    Serial.println("Echo Distance: " + sensor_l_distance);
+    Serial.println("Turn: " + turn_right);
+
+    delay(1000);
 }
