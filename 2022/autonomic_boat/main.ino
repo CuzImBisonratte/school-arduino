@@ -34,4 +34,13 @@ void loop(){
     // Get the distances
     sensor_l_distance = ;
     sensor_r_distance = ;
+
+    // Calculate the turn degrees
+    if(sensor_l_distance < 180){
+        turn_left = 0.225 * (180 - sensor_l_distance);
+    }
+    if(sensor_r_distance < 180){
+        turn_right = 0.225 * (180 - sensor_r_distance);
+    }
+
 }
